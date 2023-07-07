@@ -1,0 +1,118 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url('C:\Users\User\Dev\entregable-html\Inter.ttf');
+}
+
+body {
+  background-color:#FFFFFF;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    float: left;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+div{
+    position: relative;
+}
+
+h1 {
+  color: black;
+  margin-left: 20px;
+}
+
+p{
+    margin-left: 20px;
+}
+
+h3{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+li{
+    padding: .5em;
+    font-weight: bold;
+}
+
+ul{
+    padding: .5em;
+    display: flex;
+    list-style: none;
+}
+
+br{ 
+    display: none; 
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    padding: 25px;
+    place-self: flex-end;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    position: relative;
+    padding-right: 20px;
+}
+
+form label{
+    font-size: 15px;
+    margin-bottom: 7px;
+    padding-bottom: 10px;
+}
+
+.input-group{
+    height: 20px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    background: #ffff;
+    border-radius: 5px;
+    border: solid 1px #bfbfbf;
+}
+
+.fnln-group{
+    padding: 10px;
+    height: 20px;
+    font-size: 14px;
+    background: #ffff;
+    border-radius: 5px;
+    border: solid 1px #bfbfbf;
+}
+
+.message-box{
+    height: 100px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    background: #ffff;
+    border-radius: 5px;
+    border: solid 1px #bfbfbf;
+}
+
+.submit-btn{
+    background: #121093;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: #FFFFFF;
+
+}
+
+div.contacto>p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 47px;
+}
+
+div.numero>p{
+    margin-left: 47px;
+}
