@@ -4,104 +4,103 @@
 
 <head>
     <link rel="stylesheet" href="estilos.css">
+    <script src="archivo.js"></script>
     <title> Flowly </title>
 </head>
 
 <body>
-    <div style="display: flex;">
-        <div style= "display:inline"> 
-            <img src="flowly.png" style="width:60px;height:60px;padding:8px">
-            <ul>
+    <div class="header">
+        <div class="logo-menu"> 
+            <img src="flowly.png" class="logo-img">
+            <ul class="menu-list">
                 <li> Prices </li>
                 <li> Resources Center </li>
                 <li> About </li>
                 <li> Contact </li>
             </ul>
         </div>
-        <div style="margin-left:auto;">
-            <ul style="display: -webkit-inline-box; margin-top: auto;">
-                <li> <button class="login-btn">Login </button></li>
-                <li> <button class="submit-btn">Sign Up</button></li>
+        <div class="user-actions">
+            <ul class="user-list">
+                <li> Login </li>
+                <li> <button class="submit-btn"><b>Sign Up</b></button></li>
             </ul>
         </div>
     </div>
-    <div style="display: inline-flex">
-        <div class="column">
-            <h1 style="width: 50%; font-size: xxx-large; margin-block-end: auto;">Talk to our product <br> analytics expert </h1>
-            <p style="opacity: 0.7; width: 50%; display: inline-block;"> Have questions about pricing, plans or Flowly? Fill out the form and our product analytics expert will be in touch directly.</p>
-            <h3> Our Office </h3>
-            <div style="display: flex;">
-                <img src="oficina.png">
+
+    <div class="container">
+        <div class="div1">
+            <h1>Talk to our product <br> analytics expert</h1>
+            <p class="texto"> Have questions about pricing, plans our website? Fill out the form and our product analytics expert will be in touch directly.</p>
+            <h3 class="title"> Our Office </h3>
+            <div class="office-location">
+                <img src="oficina.png" class="office-img">
             </div>
-            <p style="opacity: 0.7; width: 50%; display: inline-block;"> Have questions about pricing, plans, or our website? Fill out the form and our product analytics expert will be in touch directly.</p>
+            <p class="texto"> Have questions about pricing, plans, or our website? Fill out the form and our product analytics expert will be in touch directly.</p>
             <br/>
             <div style="width: 80%; display: inline-flex;">
                 <div style= "display: inline-block; width: 250px;">
-                    <h3> Uruguay </h3>
+                    <h3><b>Uruguay</b></h3>
                     <div class="contacto">
-                        <img src="location icon.png" style="width: 20px;height: 20px;margin-bottom: 50px;">
-                        <!-- <p> 1234, Plaza <br> Independencia, Montevideo, Uruguay </p> -->
-                        <p>1234, Plaza</p>
+                        <img src="location icon.png" class="icon">
+                        <p style="margin-left: 11px;">1234, Plaza</p>
                         <p>Independencia,</p>
                         <p>Montevideo, Uruguay</p>
                     </div>
                     <div class="numero">
-                        <img src="phone icon.png" style="width: 20px;height: 20px;">
+                        <img src="phone icon.png" class="icon">
                         <p><u><b> +598 123 456 789 </b></u></p>
                     </div>
                 </div>
                 <div class="contacto" style="width: 250px;">
-                    <h3> Argentina </h3>
-                    <img src="location icon.png" style="width: 20px;height: 20px;margin-bottom: 50px;">
-                    <p> 5678, Av. Córdoba 2568,</p>
+                    <h3><b>Argentina</b></h3>
+                    <img src="location icon.png" class="icon">
+                    <p style="margin-left: 12px;"> 5678, Av. Córdoba 2568,</p>
                     <p>Capital Federal, Buenos</p>
                     <p>Aires, Argentina</p>
                     <div class="numero">
-                        <img src="phone icon.png" style="width: 20px;height: 20px;">
+                        <img src="phone icon.png" class="icon">
                         <p><u><b> +54 9 11 1234-5678 </b></u></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="column">
-        <div class="card">
-        <form>
-            <div style="width: auto;">
-                <div class="form-group" style="width: 50%; float:left;">
-                    <label for="name">First Name</label>
-                    <input class="fnln-group" type="text" id="Name" placeholder="First Name">
+        <div id="div2" class="card" style="width: 30%;">
+            <form id="myForm">
+                <div style="display: inline-flex;">
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input class="fnln-group" type="text" id="Name" placeholder="First Name">
+                    </div>
+                    <div class="form-group" style="margin-left:13rem;">
+                        <label for="last-name">Last Name</label>
+                        <input class="fnln-group" type="text" id="LastName" placeholder="Last Name">
+                    </div>
                 </div>
-                <div class="form-group" style="width: 50%; float:right">
-                    <label for="last-name">Last Name</label>
-                    <input class="fnln-group" type="text" id="LastName" placeholder="Last Name">
-                </div>                
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>  
-                <input class="input-group" type="text" id="email" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-                <label for="company-name">Company Name</label>
-                <input class="input-group" type="text" id="CompanyName" placeholder="Company Name">
-            </div>
-            <div class="form-group">
-                <label for="phone-number">Phone Number</label>
-                <i id="country" class="fa-solid fa-eye"></i>
-                <input class="input-group" type="text" id="PhoneNumber" placeholder="Phone Number">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <input class="message-box" type="textarea" id="MessageType" placeholder="Message">
-            </div>
-            <div>
-                <button class="submit-btn" style="display: block;margin: 0 auto;" type="submit" value="Send Request"> Send Request </button>
-            </div>
-        </form>
-        </div>
-    </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="input-group" type="text" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="company-name">Company Name</label>
+                    <input class="input-group" type="text" id="CompanyName" placeholder="Company Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <i id="country" class="fa-solid fa-eye"></i>
+                    <input class="input-group" type="text" id="PhoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="message-box" id="Message" placeholder="Message"></textarea>
+                </div>
+                <div>
+                    <button onclick="mostrarValoresFormulario()" type="button" class="submit-btn" style="width: -webkit-fill-available;"><b>Send Request</b></button>
+                </div>
+            </form>
         </div>
     </div>
 </body>
-
 </html>
+
 
