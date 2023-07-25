@@ -19,14 +19,14 @@
             </ul>
         </div>
         <div style="margin-left:auto;">
-            <ul style="display: -webkit-inline-box;">
-                <li> Log In </li>
-                <li class="submit-btn"> Sign Up </li>
+            <ul style="display: -webkit-inline-box; margin-top: auto;">
+                <li> <button class="login-btn">Login </button></li>
+                <li> <button class="submit-btn">Sign Up</button></li>
             </ul>
         </div>
     </div>
     <div style="display: inline-flex">
-        <div>
+        <div class="column">
             <h1 style="width: 50%; font-size: xxx-large; margin-block-end: auto;">Talk to our product <br> analytics expert </h1>
             <p style="opacity: 0.7; width: 50%; display: inline-block;"> Have questions about pricing, plans or Flowly? Fill out the form and our product analytics expert will be in touch directly.</p>
             <h3> Our Office </h3>
@@ -58,18 +58,23 @@
                     <p>Aires, Argentina</p>
                     <div class="numero">
                         <img src="phone icon.png" style="width: 20px;height: 20px;">
-                        <p><u><b> +598 123 456 789 </b></u></p>
+                        <p><u><b> +54 9 11 1234-5678 </b></u></p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="column">
         <div class="card">
         <form>
-            <div class="form-group">
-                <label for="name">First Name</label>
-                <input class="fnln-group" type="text" id="Name" placeholder="First Name">
-                <label for="last-name">Last Name</label>
-                <input class="fnln-group" type="text" id="LastName" placeholder="Last Name">
+            <div style="width: auto;">
+                <div class="form-group" style="width: 50%; float:left;">
+                    <label for="name">First Name</label>
+                    <input class="fnln-group" type="text" id="Name" placeholder="First Name">
+                </div>
+                <div class="form-group" style="width: 50%; float:right">
+                    <label for="last-name">Last Name</label>
+                    <input class="fnln-group" type="text" id="LastName" placeholder="Last Name">
+                </div>                
             </div>
             <div class="form-group">
                 <label for="email">Email Address</label>  
@@ -88,10 +93,12 @@
                 <label for="message">Message</label>
                 <input class="message-box" type="textarea" id="MessageType" placeholder="Message">
             </div>
-            <div class="submit-btn">
-                <input style="display: block;margin: 0 auto;" type="submit" value="Send Request">
+            <div>
+                <button class="submit-btn" style="display: block;margin: 0 auto;" type="submit" value="Send Request"> Send Request </button>
             </div>
         </form>
+        </div>
+    </div>
         </div>
     </div>
 </body>
